@@ -6,6 +6,8 @@ import ProjectList from "./ProjectList";
 import user from "../data/user";
 
 function App() {
+  console.log(user.projects)
+
   return (
     <div>
       <NavBar />
@@ -13,7 +15,7 @@ function App() {
       <About bio={user.bio} links={user.links} />
       <ProjectList projects={user.projects} />
     </div>
-  );
+  )
 }
 
 export default App;
